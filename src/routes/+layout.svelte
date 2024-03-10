@@ -4,6 +4,7 @@
 	import validateBreakpoint from "$lib/functions/breakpoints";
 	import MenuBar from '$lib/components/MenuBar.svelte';
 	import SiteHeader from '$lib/components/SiteHeader.svelte';
+	import SiteFooter from '$lib/components/SiteFooter.svelte';
 
 	let pre = "svelte-fluid-layout-";
 	const fullHeight = (node: any) => {
@@ -93,7 +94,7 @@
 			<slot />
 		</div>
 		<slot name="side2" />
-		<slot name="footer" />
+		<slot name="footer"><SiteFooter></SiteFooter></slot>
 	</div>
 
 	<div class="{pre}large {pre}large-{breakpoint}">
@@ -108,6 +109,6 @@
 				<slot name="side2" />
 			</div>
 		</div>
-		<slot name="footer" />
+		<slot name="footer"><SiteFooter></SiteFooter></slot>
 	</div>
 </QueryClientProvider>
