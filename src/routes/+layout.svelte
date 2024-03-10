@@ -2,6 +2,8 @@
 	import { QueryClientProvider } from '@tanstack/svelte-query'
 	import type { LayoutData } from './$types'
 	import validateBreakpoint from "$lib/functions/breakpoints";
+	import MenuBar from '$lib/components/MenuBar.svelte';
+	import SiteHeader from '$lib/components/SiteHeader.svelte';
 
 	let pre = "svelte-fluid-layout-";
 	const fullHeight = (node: any) => {
@@ -10,7 +12,7 @@
 	$: validateBreakpoint({ breakpoint });
 
 	export let data: LayoutData
-	export let breakpoint = "xs"; // TODO: Make breakpoint dynamic
+	export let breakpoint = "sm"; // TODO: Make breakpoint dynamic
 </script>
 
 <style>
@@ -84,7 +86,7 @@
 
 <QueryClientProvider client={data.queryClient}>
 	<div class="{pre}small {pre}small-{breakpoint}">
-		<slot name="header" />
+		<slot name="header"><SiteHeader></SiteHeader><MenuBar></MenuBar></slot>
 		<slot name="side1" />
 		<div>
 			<slot name="main" />
@@ -95,7 +97,7 @@
 	</div>
 
 	<div class="{pre}large {pre}large-{breakpoint}">
-		<slot name="header" />
+		<slot name="header"><SiteHeader></SiteHeader><MenuBar></MenuBar></slot>
 		<div>
 			<div use:fullHeight>
 				<slot name="side1" />
