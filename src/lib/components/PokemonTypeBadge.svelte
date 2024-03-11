@@ -1,5 +1,3 @@
-<div class="max-w-sm rounded overflow-hidden">
-	<div class="py-1">
-		<div class="font-bold text-xs mb-2">Pokemon Type</div>
-	</div>
+<div class="overflow-hidden rounded-full bg-stone-400 text-center my-1">
+	<div class="font-bold text-xs py-1">Pokemon Type</div>
 </div>
