@@ -9,7 +9,7 @@
 	const pokemon = data?.pokemon?.results;
 	const offset = data?.offset ?? '0';
 
-	// This data is cached by prefetchQuery in +page.ts so no fetch actually happens here
+	// This data is cached in +page.ts so no fetch actually happens here
 	const pokemonQuery = createQuery({
 		queryKey: [`pokemon-${offset}`],
 		queryFn: async () => getPokemon(offset),
