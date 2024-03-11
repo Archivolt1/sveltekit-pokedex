@@ -1,3 +1,13 @@
-<script></script>
+<script lang="ts">
+	import { Button } from 'bits-ui';
+</script>
 
-<h1>Menu</h1>
+<div class="grid grid-cols-3 gap-4">
+	<Button.Root class="inline-flex h-12 items-center justify-center bg-blue hover:bg-blue/80">
+		Back
+	</Button.Root>
+	<input type="text" placeholder="Type a name of a pokemon to search..." />
+	<Button.Root class="inline-flex h-12 items-center justify-center bg-blue hover:bg-blue/80">
+		Next
+	</Button.Root>
+</div>
