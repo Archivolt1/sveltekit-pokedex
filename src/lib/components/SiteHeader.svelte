@@ -1,3 +1,7 @@
-<script></script>
+<script>
+	import pokeball from '$lib/images/pokeball.png';
+</script>
 
-<h1 class="text-2xl text-center font-bold">Matt's SvelteKit Pokédex</h1>
+<div class="text-2xl text-center font-bold my-4">
+	<img src={pokeball} alt="Matt's SvelteKit Pokédex" width="128px" />
+</div>
