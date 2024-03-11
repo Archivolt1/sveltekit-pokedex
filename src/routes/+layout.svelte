@@ -61,6 +61,7 @@
 
 	.svelte-fluid-layout-large > div {
 		display: flex;
+		justify-content: center;
 	}
 
 	div div {

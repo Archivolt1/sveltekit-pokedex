@@ -1,3 +1,9 @@
-<script></script>
+<script>
+	import PokemonGrid from '$lib/components/PokemonGrid.svelte';
+</script>
 
-<main>Main Content</main>
+<main>
+	<div class="w-full text-center">
+		<PokemonGrid></PokemonGrid>
+	</div>
+</main>
