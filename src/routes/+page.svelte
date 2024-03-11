@@ -4,13 +4,8 @@
 	import PokemonGrid from '$lib/components/PokemonGrid.svelte';
 	import { getPokemon } from '$lib/api/pokemon';
 
-	interface Pokemon {
-		name: string;
-		url: string;
-	}
-
 	export let data: PageData;
-	const pokemon: Array<Pokemon> = data?.pokemon?.results;
+	const pokemon = data?.pokemon?.results;
 	const offset = data?.offset ?? '0';
 
 	// This data is cached by prefetchQuery in +page.ts so no fetch actually happens here
