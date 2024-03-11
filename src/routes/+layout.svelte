@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { QueryClientProvider } from '@tanstack/svelte-query';
-	import type { LayoutData } from './$types';
+	import type { PageData } from './$types';
 	import { onDestroy } from 'svelte';
 	import { getBreakpoint, validateBreakpoint } from '$lib/functions/breakpoints';
 	import MenuBar from '$lib/components/MenuBar.svelte';
@@ -12,7 +12,7 @@
 	};
 	$: validateBreakpoint({ breakpoint });
 
-	export let data: LayoutData;
+	export let data: PageData;
 	export let breakpoint = getBreakpoint();
 
 	if (typeof window !== 'undefined') {
