@@ -2,22 +2,24 @@
 	import { Button } from 'bits-ui';
 </script>
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-	<Button.Root
-		class="border-0	rounded-full inline-flex h-12 items-center justify-center bg-blue-300 hover:bg-blue/80"
-	>
-		<div class="i-tabler-arrow-left" />
-		Back
-	</Button.Root>
-	<input
-		type="text"
-		placeholder="Type a name of a pokemon to search..."
-		class="bg-gray-100 rounded-full border-0 px-4"
-	/>
-	<Button.Root
-		class="border-0 rounded-full inline-flex h-12 items-center justify-center bg-blue-300 hover:bg-blue/80"
-	>
-		Next
-		<div class="i-tabler-arrow-right" />
-	</Button.Root>
+<div class="flex flex-col">
+	<div class="text-center">
+		<input
+			type="text"
+			placeholder="Type a name of a pokemon to search..."
+			class="bg-gray-100 rounded-full border-0 px-4 h-12 w-1/2"
+		/>
+		<div class="mt-6">
+			<Button.Root
+				class="cursor-pointer border-0 rounded-full inline-flex h-12 items-center justify-center bg-blue-200 hover:bg-blue/80 w-1/6"
+			>
+				Back
+			</Button.Root>
+			<Button.Root
+				class="cursor-pointer border-0 rounded-full inline-flex h-12 items-center justify-center bg-blue-200 hover:bg-blue/80 w-1/6"
+			>
+				Next
+			</Button.Root>
+		</div>
+	</div>
 </div>
