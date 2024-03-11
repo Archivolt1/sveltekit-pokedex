@@ -1,6 +1,6 @@
-# create-svelte
+# SvelteKit Pokedex PoC
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Pokedex project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte). Uses tanstack, msw, & vitest.
 
 ## Creating a project
 
