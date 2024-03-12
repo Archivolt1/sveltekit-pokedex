@@ -27,7 +27,6 @@
 			<slot name="header"><SiteHeader /><MenuBar /></slot>
 			<slot name="side1" />
 			<div>
-				<slot name="main" />
 				<slot />
 			</div>
 			<slot name="side2" />
@@ -40,7 +39,6 @@
 				<div use:fullHeight>
 					<slot name="side1" />
 				</div>
-				<slot name="main" />
 				<slot />
 				<div use:fullHeight>
 					<slot name="side2" />
