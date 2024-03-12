@@ -15,6 +15,9 @@
 {#if $pokemonDetailsQuery.isSuccess && $pokemonDetailsQuery.data}
 	<div class="bg-gray-100 rounded overflow-hidden">
 		<div class="px-6 py-4">
+			<div class="font-bold text-sm md:text-lg text-neutral">
+				{$pokemonDetailsQuery.data?.id}
+			</div>
 			<div class="font-bold text-sm md:text-lg mb-2">
 				{pokemon.name.charAt(0).toLocaleUpperCase() + pokemon.name.slice(1)}
 			</div>
