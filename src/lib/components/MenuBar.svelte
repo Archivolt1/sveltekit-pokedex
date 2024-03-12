@@ -18,7 +18,7 @@
 			<Button.Root
 				class="cursor-pointer border-0 rounded-full inline-flex h-12 items-center justify-center bg-blue-200 hover:bg-blue/80 w-1/4 md:w-1/6"
 			>
-				Next
+				Next Page
 			</Button.Root>
 		</div>
 	</div>
