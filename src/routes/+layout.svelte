@@ -35,14 +35,12 @@
 
 		<div class="{pre}large {pre}large-{breakpoint}">
 			<slot name="header"><SiteHeader /><MenuBar /></slot>
-			<div>
-				<div use:fullHeight>
-					<slot name="side1" />
-				</div>
-				<slot />
-				<div use:fullHeight>
-					<slot name="side2" />
-				</div>
+			<div use:fullHeight>
+				<slot name="side1" />
+			</div>
+			<slot />
+			<div use:fullHeight>
+				<slot name="side2" />
 			</div>
 			<slot name="footer" />
 		</div>

@@ -18,6 +18,5 @@
 </script>
 
 <main>
-	{JSON.stringify(pokemon)}
-	<PokemonGrid></PokemonGrid>
+	<PokemonGrid pokemonArray={pokemon}></PokemonGrid>
 </main>
