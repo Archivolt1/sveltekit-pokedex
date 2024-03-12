@@ -2,6 +2,7 @@
 	import { createQuery } from '@tanstack/svelte-query';
 	import PokemonTypeBadge from '$lib/components/PokemonTypeBadge.svelte';
 	import { getPokemonDetails } from '$lib/api/pokemon';
+	import PokemonCardPlaceholder from '$lib/components/PokemonCardPlaceholder.svelte';
 
 	export let pokemon: Pokemon;
 
@@ -32,5 +33,5 @@
 {:else if $pokemonDetailsQuery.isError}
 	<p>Error loading pokemon details...</p>
 {:else if $pokemonDetailsQuery.isLoading}
-	<p>Loading...</p>
+	<PokemonCardPlaceholder />
 {/if}
